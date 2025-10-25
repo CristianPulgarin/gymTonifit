@@ -10,7 +10,6 @@ function Dieta() {
         </h1>
 
         <form className="space-y-6">
-          {/* Nombre de la dieta */}
           <div>
             <label
               htmlFor="dieta"
@@ -27,7 +26,6 @@ function Dieta() {
             />
           </div>
 
-          {/* Cantidad */}
           <div>
             <label
               htmlFor="cantidad"
@@ -44,7 +42,6 @@ function Dieta() {
             />
           </div>
 
-          {/* Suplemento */}
           <div>
             <label
               htmlFor="suplemento"
@@ -61,7 +58,6 @@ function Dieta() {
             />
           </div>
 
-          {/* Horario */}
           <div>
             <label
               htmlFor="horario"
@@ -78,7 +74,6 @@ function Dieta() {
             />
           </div>
 
-          {/* Botón */}
           <div className="flex justify-center">
             <button
               type="submit"
@@ -88,12 +83,8 @@ function Dieta() {
             </button>
           </div>
 
-          {/* Enlace opcional */}
           <div className="text-center">
-            <a
-              href="#"
-              className="text-blue-400 text-sm hover:underline"
-            >
+            <a href="#" className="text-blue-400 text-sm hover:underline">
               ¿Necesitas ayuda?
             </a>
           </div>

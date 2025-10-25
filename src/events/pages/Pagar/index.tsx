@@ -23,7 +23,7 @@ function Pagar() {
         </h1>
 
         <form className="space-y-6">
-          {/* Campo Cuenta */}
+          
           <div>
             <label
               htmlFor="cuenta"
@@ -39,7 +39,7 @@ function Pagar() {
             />
           </div>
 
-          {/* Campo Nombre */}
+
           <div>
             <label
               htmlFor="nombre"
@@ -55,7 +55,7 @@ function Pagar() {
             />
           </div>
 
-          {/* Campo Plan */}
+
           <div>
             <label
               htmlFor="plan"
@@ -71,7 +71,6 @@ function Pagar() {
             />
           </div>
 
-          {/* Botón de pago */}
           <div className="text-center">
             <button
               type="submit"
@@ -82,7 +81,6 @@ function Pagar() {
             </button>
           </div>
 
-          {/* Estado del pago */}
           {estado ? (
             <div className="text-center text-gray-400 mt-4"></div>
           ) : (
@@ -97,4 +95,3 @@ function Pagar() {
 }
 
 export default Pagar;
-  

@@ -7,29 +7,23 @@ const VerRutina = () => {
   return (
     <div className="min-h-screen flex justify-center items-center bg-gradient-to-b from-[#0f172a] to-[#1e293b] p-6">
       <div className="bg-[#1e293b]/80 backdrop-blur-md border border-gray-500 w-full max-w-3xl rounded-2xl shadow-2xl p-10 text-white">
-        {/* Título principal */}
         <h1 className="text-4xl font-extrabold text-center text-white mb-8 drop-shadow-md">
           RUTINAS
         </h1>
 
-        {/* Formulario de asignación */}
         <section className="mb-10">
           <h2 className="text-2xl font-bold text-center text-gray-200 mb-6">
             Asignar nueva rutina
           </h2>
 
           <div className="flex flex-col md:flex-row gap-4 mb-6">
-            <select
-              className="w-full md:w-1/2 bg-[#334155] text-gray-200 placeholder-gray-400 border border-gray-500 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-red-600"
-            >
+            <select className="w-full md:w-1/2 bg-[#334155] text-gray-200 placeholder-gray-400 border border-gray-500 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-red-600">
               <option value="">Seleccionar usuario</option>
               <option value="1">Cristian David</option>
               <option value="2">Laura Gómez</option>
             </select>
 
-            <select
-              className="w-full md:w-1/2 bg-[#334155] text-gray-200 placeholder-gray-400 border border-gray-500 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-red-600"
-            >
+            <select className="w-full md:w-1/2 bg-[#334155] text-gray-200 placeholder-gray-400 border border-gray-500 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-red-600">
               <option value="">Seleccionar entrenamiento</option>
               <option value="pecho">Pecho</option>
               <option value="espalda">Espalda</option>
@@ -43,7 +37,6 @@ const VerRutina = () => {
           </div>
         </section>
 
-        {/* Sección de clases asignadas */}
         <section>
           <h2 className="text-2xl font-bold text-center text-gray-200 mb-6">
             Clases asignadas

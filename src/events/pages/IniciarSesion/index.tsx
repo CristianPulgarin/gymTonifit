@@ -1,8 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { useFormik } from "formik";
-import { getFirestore, collection, query, where, getDocs } from "firebase/firestore";
+import {
+  getFirestore,
+  collection,
+  query,
+  where,
+  getDocs,
+} from "firebase/firestore";
 import { useNavigate, Link } from "react-router-dom";
-import './IniciarSesion.css';
+import "./IniciarSesion.css";
 
 function IniciarSesion({ setUserRole }: any) {
   const firestore = getFirestore();
@@ -16,7 +22,6 @@ function IniciarSesion({ setUserRole }: any) {
     rol?: string;
   }
 
-  
   return (
     <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black px-4">
       <div className="w-full max-w-md bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl p-8 border border-gray-700">
@@ -39,7 +44,7 @@ function IniciarSesion({ setUserRole }: any) {
               className="w-full bg-white/20 text-white placeholder-gray-300 py-2 px-4 rounded-lg outline-none focus:ring-2 focus:ring-red-500 focus:bg-white/30 transition-all"
               placeholder="ejemplo@correo.com"
               required
-             />
+            />
           </div>
 
           {/* Contraseña */}
@@ -56,7 +61,7 @@ function IniciarSesion({ setUserRole }: any) {
               className="w-full bg-white/20 text-white placeholder-gray-300 py-2 px-4 rounded-lg outline-none focus:ring-2 focus:ring-red-500 focus:bg-white/30 transition-all"
               placeholder="••••••••"
               required
-             />
+            />
           </div>
 
           {/* Error */}
@@ -66,7 +71,6 @@ function IniciarSesion({ setUserRole }: any) {
             </p>
           )}
 
-          {/* Botón */}
           <div className="flex justify-center">
             <button
               type="submit"
@@ -76,7 +80,6 @@ function IniciarSesion({ setUserRole }: any) {
             </button>
           </div>
 
-          {/* Recuperar contraseña */}
           <div className="text-center">
             <Link
               to="/Actualizar"

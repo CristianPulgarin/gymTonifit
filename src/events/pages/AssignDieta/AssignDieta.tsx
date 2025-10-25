@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 
 const AssignDieta = () => {
-  const [selectedUser, setSelectedUser] = useState("");
-  const [selectedDieta, setSelectedDieta] = useState("");
-  const [searchUserTerm, setSearchUserTerm] = useState("");
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-[#1a1f2e] to-[#0e121a]">
@@ -12,7 +9,6 @@ const AssignDieta = () => {
           Asignar Dietas
         </h2>
 
-        {/* Formulario principal */}
         <form className="space-y-6">
           <div>
             <label className="block text-lg font-semibold text-white mb-2">
@@ -22,8 +18,6 @@ const AssignDieta = () => {
               type="text"
               placeholder="Selecciona un usuario"
               className="w-full bg-white/10 border border-white/20 text-white placeholder-gray-300 px-4 py-3 rounded-xl focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500 transition-all"
-              value={selectedUser}
-              onChange={(e) => setSelectedUser(e.target.value)}
             />
           </div>
 
@@ -35,8 +29,6 @@ const AssignDieta = () => {
               type="text"
               placeholder="Selecciona una dieta"
               className="w-full bg-white/10 border border-white/20 text-white placeholder-gray-300 px-4 py-3 rounded-xl focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500 transition-all"
-              value={selectedDieta}
-              onChange={(e) => setSelectedDieta(e.target.value)}
             />
           </div>
 
@@ -58,12 +50,12 @@ const AssignDieta = () => {
             type="text"
             placeholder="Buscar en dietas asignadas..."
             className="w-full bg-white/10 border border-white/20 text-white placeholder-gray-300 px-4 py-3 rounded-xl mb-6 focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500 transition-all"
-            value={searchUserTerm}
-            onChange={(e) => setSearchUserTerm(e.target.value)}
           />
 
           <div className="bg-white/10 border border-white/20 rounded-xl p-5 shadow-lg">
-            <h4 className="text-xl font-semibold text-white mb-1">Dieta: ATUN</h4>
+            <h4 className="text-xl font-semibold text-white mb-1">
+              Dieta: ATUN
+            </h4>
             <p className="text-gray-300">
               <strong>Cliente:</strong> Cristian Pulgarin
             </p>

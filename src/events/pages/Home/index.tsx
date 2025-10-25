@@ -5,10 +5,7 @@ import "./Home.css";
 function Home() {
   return (
     <>
-      {/* === FONDO GENERAL ESTILO LOGIN === */}
       <div className="min-h-screen bg-gradient-to-b from-[#0b1120] to-[#000] text-white">
-        
-        {/* === CARRUSEL === */}
         <div className="w-full h-[350px] md:h-[500px] overflow-hidden flex">
           <img
             className="w-full object-cover animate-fade rounded-lg opacity-80"
@@ -22,7 +19,6 @@ function Home() {
           />
         </div>
 
-        {/* === ENTRENADORES === */}
         <section className="py-16 backdrop-blur-md">
           <h1 className="text-center text-4xl font-bold mb-10 text-white drop-shadow-md">
             Nuestros Entrenadores
@@ -73,11 +69,26 @@ function Home() {
           </h1>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 px-8">
             {[
-              { img: "https://i.blogs.es/947e13/six-pack/1366_2000.jpeg", txt: "Pecho" },
-              { img: "https://i.blogs.es/ed141c/pexels-pikx-by-panther-2092479/1366_2000.jpeg", txt: "Espalda" },
-              { img: "https://i.ytimg.com/vi/Xv4qExTKxbU/maxresdefault.jpg", txt: "Pierna" },
-              { img: "https://thumbs.dreamstime.com/b/hombres-musculares-entrenando-en-gimnasios-haciendo-ejercicios-para-bicicletas-fuertes-que-construyen-el-cuerpo-muestran-b%C3%ADceps-164090981.jpg", txt: "Bíceps" },
-              { img: "https://t2.uc.ltmcdn.com/es/posts/6/6/0/los_mejores_ejercicios_para_los_hombros_42066_orig.jpg", txt: "Hombro" },
+              {
+                img: "https://i.blogs.es/947e13/six-pack/1366_2000.jpeg",
+                txt: "Pecho",
+              },
+              {
+                img: "https://i.blogs.es/ed141c/pexels-pikx-by-panther-2092479/1366_2000.jpeg",
+                txt: "Espalda",
+              },
+              {
+                img: "https://i.ytimg.com/vi/Xv4qExTKxbU/maxresdefault.jpg",
+                txt: "Pierna",
+              },
+              {
+                img: "https://thumbs.dreamstime.com/b/hombres-musculares-entrenando-en-gimnasios-haciendo-ejercicios-para-bicicletas-fuertes-que-construyen-el-cuerpo-muestran-b%C3%ADceps-164090981.jpg",
+                txt: "Bíceps",
+              },
+              {
+                img: "https://t2.uc.ltmcdn.com/es/posts/6/6/0/los_mejores_ejercicios_para_los_hombros_42066_orig.jpg",
+                txt: "Hombro",
+              },
             ].map((rutina) => (
               <div
                 key={rutina.txt}
@@ -88,7 +99,9 @@ function Home() {
                   alt={rutina.txt}
                   className="w-full h-44 object-cover opacity-90"
                 />
-                <p className="text-center py-3 font-semibold text-white">{rutina.txt}</p>
+                <p className="text-center py-3 font-semibold text-white">
+                  {rutina.txt}
+                </p>
               </div>
             ))}
           </div>

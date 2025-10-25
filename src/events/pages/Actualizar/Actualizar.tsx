@@ -12,7 +12,6 @@ function Actualizar() {
           Modificar datos del usuario
         </h1>
 
-        {/* Campo para buscar usuario */}
         <div className="mb-12">
           <label
             htmlFor="userName"
@@ -39,7 +38,6 @@ function Actualizar() {
           </div>
         </div>
 
-        {/* Formulario de actualización */}
         <form className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
             <label

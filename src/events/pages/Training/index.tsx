@@ -5,7 +5,14 @@ import { FirebaseContext } from "../../../firebase";
 
 function Trainig() {
   const [trainings, setTrainings] = useState([]);
-  const daysOfWeek = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+  const daysOfWeek = [
+    "Lunes",
+    "Martes",
+    "Miércoles",
+    "Jueves",
+    "Viernes",
+    "Sábado",
+  ];
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#0b1221] via-[#101828] to-[#0b1221] px-6 py-12">
@@ -15,7 +22,7 @@ function Trainig() {
         </h1>
 
         <form className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Nombre de la rutina */}
+          
           <div className="md:col-span-2">
             <label
               htmlFor="name"
@@ -33,7 +40,6 @@ function Trainig() {
             />
           </div>
 
-          {/* Descripción */}
           <div className="md:col-span-2">
             <label
               htmlFor="description"
@@ -50,7 +56,6 @@ function Trainig() {
             />
           </div>
 
-          {/* Tipo de ejercicio */}
           <div>
             <label
               htmlFor="category"
@@ -73,7 +78,6 @@ function Trainig() {
             </select>
           </div>
 
-          {/* Guía (video) */}
           <div>
             <label
               htmlFor="guia"
@@ -106,7 +110,6 @@ function Trainig() {
             </select>
           </div>
 
-          {/* Día */}
           <div>
             <label
               htmlFor="day"
@@ -129,7 +132,6 @@ function Trainig() {
             </select>
           </div>
 
-          {/* Hora */}
           <div>
             <label
               htmlFor="startHour"
@@ -158,7 +160,6 @@ function Trainig() {
           </div>
         </form>
 
-        {/* Botón de crear */}
         <div className="flex justify-center pt-10">
           <button
             type="submit"

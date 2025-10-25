@@ -3,14 +3,9 @@ import { FirebaseContext } from "../../../firebase";
 import "./Assign.css";
 
 const Assign = () => {
-  const [users, setUsers] = useState([]);
-  const [classs, setClass] = useState([]);
   const [selectedTraining, setSelectedTraining] = useState("");
   const [selectedUser, setSelectedUser] = useState("");
-  const [availableTrainings, setAvailableTrainings] = useState([]);
-  const [assignedTrainings, setAssignedTrainings] = useState([]);
-  const [searchTerm, setSearchTerm] = useState("");
-
+  
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-[#0a0f25] to-[#1a2238] py-10">
       {/* Caja principal */}
@@ -76,8 +71,6 @@ const Assign = () => {
           type="text"
           placeholder="Buscar entrenamientos asignados"
           className="w-full bg-[#3b4658] text-white text-lg rounded-md p-3 outline-none placeholder-gray-300 focus:ring-2 focus:ring-blue-400 mb-6"
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
         />
         <div className="space-y-4 text-white text-center">
           {/* Aquí aparecerán las clases asignadas */}

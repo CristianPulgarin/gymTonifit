@@ -15,22 +15,18 @@ const VerDieta = () => {
   return (
     <div className="min-h-screen flex justify-center items-center bg-gradient-to-b from-[#0f172a] to-[#1e293b] p-6">
       <div className="bg-[#1e293b]/80 backdrop-blur-md border border-gray-500 w-full max-w-3xl rounded-2xl shadow-2xl p-10 text-white">
-        {/* Título principal */}
         <h2 className="text-4xl text-center font-extrabold text-white mb-8 drop-shadow-md">
           ASIGNAR DIETAS
         </h2>
 
         <div className="space-y-4 mb-10">
-          {/* Aquí puedes agregar tus selects o campos de asignación si los tienes */}
         </div>
 
-        {/* Sección de clases asignadas */}
         <div>
           <h2 className="text-2xl font-bold text-center text-gray-200 mb-6">
             Clases asignadas
           </h2>
 
-          {/* Campo de búsqueda */}
           <div className="flex justify-center">
             <input
               type="text"
@@ -44,7 +40,6 @@ const VerDieta = () => {
             />
           </div>
 
-          {/* Lista de dietas asignadas */}
           <div className="space-y-6">
             <div className="bg-[#334155] border border-gray-600 p-6 rounded-lg shadow-md hover:shadow-lg transition-all">
               <h3 className="text-xl font-bold text-white mb-2">
