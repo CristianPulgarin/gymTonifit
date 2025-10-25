@@ -26,23 +26,23 @@ function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-8">
             {[
               {
-                img: "https://pbs.twimg.com/media/ELguppVWsAAsjV0.jpg",
-                nombre: "Leonardo Mesario",
+                img: "https://img.freepik.com/foto-gratis/adulto-joven-haciendo-deporte-interior-gimnasio_23-2149205542.jpg?semt=ais_hybrid&w=740&q=80",
+                nombre: "Juan Lopez",
                 desc: "Experto en alimentación y hábitos saludables",
               },
               {
-                img: "https://www.sportyou.es/blog/wp-content/uploads/2016/02/neymarnino.jpg",
-                nombre: "Néstor JR JR",
+                img: "https://fhinstitute.com/wp-content/uploads/2023/02/10-tips-para-ser-el-mejor-entrenador-de-tu-gimnasio-scaled.jpg",
+                nombre: "Carlos Suarez",
                 desc: "Especialista en aumento de masa muscular",
               },
               {
-                img: "https://pbs.twimg.com/media/EO9LEfcWsAAJ0ia.jpg",
-                nombre: "Ronald Upegui",
+                img: "https://previews.123rf.com/images/wavebreakmediamicro/wavebreakmediamicro1510/wavebreakmediamicro151012692/47306175-handsome-trainer-smiling-at-camera-at-the-gym.jpg",
+                nombre: "Sebastian Ramirez",
                 desc: "Enfocado en fuerza y rendimiento físico",
               },
               {
-                img: "https://www.ecestaticos.com/imagestatic/clipping/e85/d36/e85d36994524515c4fb68ac5669520d6/the-rock-un-gordito-feliz-que-esconde-sus-musculos-en-central-intelligence.jpg?mtime=1622841982",
-                nombre: "Piedra Johnson",
+                img: "https://mercadofitness.com/wp-content/uploads/2021/09/Dos-certificaciones-norteamericanas-de-entrenadores-llegan-a-Centroamerica-1.jpg",
+                nombre: "Alfredo Morelos",
                 desc: "Experto en pérdida de peso y tonificación",
               },
             ].map((trainer) => (
