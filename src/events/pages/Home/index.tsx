@@ -1,11 +1,30 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
 
 function Home() {
+  const [showWelcome, setShowWelcome] = useState(false);
+
+  useEffect(() => {
+  
+    setShowWelcome(true);
+
+    const timer = setTimeout(() => {
+      setShowWelcome(false);
+    }, 6000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
       <div className="min-h-screen bg-gradient-to-b from-[#0b1120] to-[#000] text-white">
+        {showWelcome && (
+          <div className="text-center py-3 bg-[#E50914] text-white font-semibold animate-fade-down">
+            ¡Aprovecha nuestras promociones ahora mismo!
+          </div>
+        )}
+
         <div className="w-full h-[350px] md:h-[500px] overflow-hidden flex">
           <img
             className="w-full object-cover animate-fade rounded-lg opacity-80"
@@ -19,6 +38,7 @@ function Home() {
           />
         </div>
 
+        {/* === ENTRENADORES === */}
         <section className="py-16 backdrop-blur-md">
           <h1 className="text-center text-4xl font-bold mb-10 text-white drop-shadow-md">
             Nuestros Entrenadores
@@ -155,7 +175,7 @@ function Home() {
                   </ul>
                 </div>
                 <button className="mt-6 bg-[#E50914] hover:bg-[#b0070f] text-white px-6 py-2 rounded-full font-semibold transition-all">
-                  <Link to="/pagar#top">Pagar</Link>
+                  <Link to="/pagar#top" className="text-gray-300! no-underline!">Pagar</Link>
                 </button>
               </div>
             ))}

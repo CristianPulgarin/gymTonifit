@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Routes, Route } from "react-router";
-import firebase, { FirebaseContext } from "./firebase";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Importación de componentes
